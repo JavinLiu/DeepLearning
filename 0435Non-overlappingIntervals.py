@@ -1,5 +1,5 @@
 # 无重叠区间
-# 贪心+动规
+# 贪心：按活动时间end排序, 遍历1->n个活动，如果start<end，则区间重叠，活动冲突;反之，区间不重叠，活动不冲突，更新end
 def eraseOverlapIntervals(intervals):
     # sort_inter = sorted(intervals, key=lambda x: [x[1], x[0]])
     intervals = sorted(intervals, key=lambda x: x[1])
