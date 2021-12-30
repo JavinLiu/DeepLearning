@@ -1,5 +1,5 @@
 # 用最少数量的箭引爆气球
-# 贪心: 按气球end坐标排序, 遍历1->n个气球，如果start<=end，则区间重叠，可以一件穿透;反之，区间不重叠，需要一根新箭，更新end
+# 贪心: 按气球end坐标排序, 遍历1->n个气球，如果start<=end，则区间重叠，可以一件穿透;反之，区间不重叠，需要一根新箭，同时更新end
 def findMinArrowShots(points):
     points = sorted(points, key=lambda x: x[1])
     pre = points[0][1]
