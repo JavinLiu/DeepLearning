@@ -1,5 +1,5 @@
 # 两个字符串的最小ASCII删除和
-# 自底向上，迭代
+# dp自底向上，迭代
 def minimumDeleteSum(s1, s2):
     n = len(s1)
     m = len(s2)
